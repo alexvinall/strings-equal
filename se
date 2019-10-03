@@ -1,0 +1,14 @@
+#!/bin/bash
+# String comparison in pure bash with no dependencies
+# Compares two strings and checks if they match
+
+if [ $# -ne 2 ]; then 
+  echo "Function needs two strings to compare"
+  exit 1; 
+fi
+
+if [ "$1" == "$2" ]; then
+    echo "Strings match."
+else
+    echo "Strings do not match."
+fi
